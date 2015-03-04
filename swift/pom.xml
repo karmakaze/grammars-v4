@@ -18,7 +18,9 @@
 				<version>${antlr.version}</version>
 				<configuration>
 					<sourceDirectory>${basedir}</sourceDirectory>
-					<grammars>tnt.g4</grammars>
+					<includes>
+						<include>Swift.g4</include>
+					</includes>
 				</configuration>
 				<executions>
 					<execution>
@@ -31,6 +33,7 @@
 			<plugin>
 				<groupId>org.antlr</groupId>
 				<artifactId>antlr4test-maven-plugin</artifactId>
+				<version>${antlr4test.version}</version>
 				<configuration>
 					<verbose>false</verbose>
 					<showTree>true</showTree>

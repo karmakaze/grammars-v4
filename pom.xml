@@ -8,6 +8,7 @@
 	<name>ANTLR4 grammars</name>
 	<modules>
 		<module>support</module>
+		<module>swift</module>
 		<module>objc</module>		
 		<module>dot</module>		
 		<module>creole</module>
@@ -29,6 +30,7 @@
 	<properties>
 		<target.jvm>1.6</target.jvm>
 		<antlr.version>4.2.2</antlr.version>
+		<antlr4test.version>${project.version}</antlr4test.version>
 	</properties>
 	<dependencies>
 		<dependency>
